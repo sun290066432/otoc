@@ -1,0 +1,520 @@
+/*============================导航=============================*/
+header {
+	width: 100%;
+	height: 105px;
+	background: #fff;
+}
+
+header .container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header .container .logo {
+	width: 180px;
+	float: left;
+}
+
+header .container .logo a {
+	display: block;
+	height: 105px;
+	line-height: 105px;
+}
+
+header .container .logo a img {
+	margin-top: 19px;
+}
+
+header .container nav {
+	height: 105px;
+	width: 1020px;
+	float: left;
+}
+
+header .container nav ul {
+	margin-left: 480px;
+	margin-top: 37px;
+}
+
+header .container nav ul li {
+	height: 32px;
+	line-height: 32px;
+	width: 108px;
+	float: left;
+	text-align: center;
+	transition: .5s;
+}
+
+header .container nav ul li a {
+	font-size: 18px;
+	color: #242424;
+}
+
+header .container nav ul li:hover {
+	cursor: pointer;
+	background: #c2c6e1;
+}
+
+header .container nav ul li:hover a {
+	color: #fff;
+}
+
+header .container nav ul li:nth-of-type(2) {
+	background: #c2c6e1;
+}
+
+header .container nav ul li:nth-of-type(2) a {
+	font-family: "微软雅黑";
+	color: #fff;
+}
+
+/*========================================price================================*/
+.price{
+	width: 100%;
+	margin-top: 40px;
+}
+.price .container{
+	width: 1200px;
+	margin:0 auto;
+}
+.price .container .pro_detail{
+	width: 700px;
+	float: left;
+}
+.price .container .pro_detail .pro_detail_left{
+	width: 700px;
+	float: left;
+}
+.price .container .pro_detail .pro_detail_left .imgList{
+	float: left;
+	margin-right: 30px;
+}
+.imgList li{
+	width: 130px;
+	height: 110px;
+	margin-bottom: 20px;
+}
+.imgList li img{
+	display: block;
+}
+#content{
+	width: 500px;
+	float: left;
+}
+#content .pro_detail_left{
+	width: 500px;
+}
+#content .pro_detail{
+	width: 500px;
+}
+#content .writing{
+	width: 500px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ebebeb;
+}
+#content .writing h3{
+	font-size: 30px;
+	font-weight: bold;
+}
+#content .writing h4{
+	font-size: 22px;
+	height: 35px;
+	line-height: 35px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+#content .writing p{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+#content .writing span{
+	color: #ff4b4b;
+	font-size: 20px;
+	font-weight: bold;
+}
+#content .writing strong{
+	display: inline-block;
+	float: right;
+	color: #666;
+}
+.pro_detail_left .jqzoom {
+	
+	float: left;
+	position: relative;
+	padding: 0px;
+	cursor: pointer;
+}
+/*购物车这里*/
+.pro_detail_left .color_change{
+	padding-top: 10px;
+}
+.pro_detail_left .color_change strong{
+	color: #676767;
+	font-size: 18px;
+}
+.pro_detail_left .color_change span{
+	display: inline-block;
+	float: right;
+	font-size: 14px;
+	color: #7f7f7f;
+}
+.pro_detail_left .color_change ul{
+	padding-top: 10px;
+}
+.pro_detail_left .color_change li{
+	float: left;
+	width: 30px;
+	margin-right: 10px;
+}
+.pro_detail_left .pro_size{
+	color: #676767;
+	font-size: 18px;
+}
+.pro_detail_left .pro_size ul{
+	padding-top: 10px;
+}
+.pro_detail_left .pro_size li span{
+	display: block;
+}
+.pro_detail_left .pro_size li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.pro_detail_left .pro_size li:hover{
+	background: #ff6000;
+	color: #fff;
+}
+
+.pro_detail_left .pro_num{
+	color: #676767;
+	font-size: 18px;
+	padding-top: 10px;
+}
+.pro_detail_left .pro_num select{
+	display: inline;
+	border: 1px solid #ccc;
+	color: #676767;
+}
+.pro_detail_left .pro_price{
+	color: #676767;
+	font-size: 18px;
+	padding-top: 10px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+.pro_detail_left .pro_price span{
+	color: #ff6b6b;
+	font-weight: bold;
+	font-size: 20px;
+}
+.pro_detail_left #cart{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.pro_detail_left #cart a{
+	display: block;
+	width: 130px;
+	height: 30px;
+	background: #ff6000;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+}
+.pro_detail_left .dj{
+	position: absolute;
+	top: 480px;
+	left: 360px;
+}
+
+
+
+
+div.zoomdiv {
+	z-index: 999;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 200px;
+	height: 200px;
+	background: #ffffff;
+	border: 1px solid #CCCCCC;
+	display: none;
+	text-align: center;
+	overflow: hidden;
+}
+
+div.jqZoomPup {
+	z-index: 999;
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #aaa;
+	background: #ffffff url(../images/zoomlens.gif) 50% top no-repeat;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	filter: alpha(Opacity=50);
+}
+
+
+
+
+
+
+
+/*======================tab切换部分===============*/
+.tab{
+	width: 100%;
+}
+.tab .container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.tab .container .tab-left{
+	width: 430px;
+	height: 535px;
+	float: left;
+	background: url(../images/tab_03.jpg) no-repeat center;
+	margin-right: 20px;
+}
+.tab .container .tab-writing{
+	width: 750px;
+	float: left;
+}
+.tab .container .tab-writing ul li{
+	float: left;
+	width: 190px;
+	height: 52px;
+	margin-left: 15px;
+	text-align: center;
+	line-height: 52px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.tab .container .tab-writing .content div{
+	
+}
+.show{
+	height: 200px; 
+	text-indent: 36px;
+	line-height: 40px;
+	font-size: 18px;
+	padding-top: 30px;
+	color: #7f7f7f;
+}
+.on{background:#000; color: white;}
+/*======================tab切换部分结束===============*/
+
+
+/*========================商品评价=====================*/
+.appraise{
+	width: 100%;
+}
+.appraise .container{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.appraise .container h3{
+	width: 100%;
+	height: 64px;
+	line-height: 64px;
+	border-top: 2px solid #ebebeb;
+	border-bottom: 2px solid #ebebeb;
+	text-align: center;
+	font-size: 22px;
+	color: #676767;
+	font-family: "微软雅黑";
+}
+.appraise .container .pro_rating h4{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #666;
+	font-family: "微软雅黑";
+}
+ .rating {
+	width: 80px;
+	height: 16px;
+	margin: 20px auto;
+	padding: 0;
+	list-style: none;
+	clear: both;
+	position: relative;
+	background: url(../images/star-matrix.gif) no-repeat 0 0;
+}
+
+.nostar {
+	background-position: 0 0
+}
+
+.onestar {
+	background-position: 0 -16px
+}
+
+.twostar {
+	background-position: 0 -32px
+}
+
+.threestar {
+	background-position: 0 -48px
+}
+
+.fourstar {
+	background-position: 0 -64px
+}
+
+.fivestar {
+	background-position: 0 -80px
+}
+
+ul.rating li {
+	cursor: pointer;
+	float: left;
+	text-indent: -999em;
+}
+
+ul.rating li a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	text-decoration: none;
+	z-index: 200;
+}
+
+ul.rating li.one a {
+	left: 0
+}
+
+ul.rating li.two a {
+	left: 16px;
+}
+
+ul.rating li.three a {
+	left: 32px;
+}
+
+ul.rating li.four a {
+	left: 48px;
+}
+
+ul.rating li.five a {
+	left: 64px;
+}
+
+ul.rating li a:hover {
+	z-index: 2;
+	width: 80px;
+	height: 16px;
+	overflow: hidden;
+	left: 0;
+	background: url(../images/star-matrix.gif) no-repeat 0 0
+}
+
+ul.rating li.one a:hover {
+	background-position: 0 -96px;
+}
+
+ul.rating li.two a:hover {
+	background-position: 0 -111px;
+}
+
+ul.rating li.three a:hover {
+	background-position: 0 -127px
+}
+
+ul.rating li.four a:hover {
+	background-position: 0 -143px
+}
+
+ul.rating li.five a:hover {
+	background-position: 0 -159px
+}
+
+.tuijian{
+	width: 100%;
+}
+.tuijian .container{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.tuijian .container h4{
+	text-align: center;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+}
+.tuijian .container .box{
+	position: relative;
+	width: 1040px;
+	margin: 20px auto;
+	overflow: hidden;
+	height: 390px;
+}
+.tuijian .container .box ul{
+	width: 2350px;
+	position: absolute;
+	top: 62;
+	left: -260px;
+}
+.tuijian .container .box ul li{
+	float: left;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+
+.footer {
+	width: 100%;
+	background: #000;
+}
+
+.footer .container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.footer .container .top {
+	height: 78px;
+	line-height: 78px;
+	border-bottom: 1px solid #333;
+}
+
+.footer .container .top a {
+	font-size: 16px;
+	color: #bcbcbc;
+	border-bottom: 2px solid #fff;
+	letter-spacing: 3px;
+	display: inline;
+}
+
+.footer .container .top a:hover {
+	color: #fff;
+}
+
+.footer .container .bottom {
+	width: 100%;
+	text-align: center;
+	height: 78px;
+	line-height: 78px;
+	color: #545454;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
